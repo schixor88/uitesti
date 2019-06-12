@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="387dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-188dp"
+        android:src="@mipmap/topdesign" />
+
+    <!--Cardview top 4 buttons-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/top_card_view"
+        android:elevation="2dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/cardtop_width_large"
+        android:layout_height="@dimen/cardtop_height_large">
+
+        <GridLayout
+
+            android:layout_gravity="center"
+            android:columnCount="4"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Load"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/roundbuttonshape"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:textSize="10dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <Button
+
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="4dp"
+                android:text="Load"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/roundbuttonshape"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:textSize="10dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <Button
+
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="4dp"
+                android:text="Load"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/roundbuttonshape"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:textSize="10dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <Button
+
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="4dp"
+                android:text="Load"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/roundbuttonshape"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:textSize="10dp"
+                android:textColor="@color/colorPrimary"/>
+
+
+
+
+
+
+
+
+
+        </GridLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:textSize="18dp"
+        android:layout_marginLeft="25dp"
+        android:paddingTop="10dp"
+        android:layout_below="@id/top_card_view"
+        android:id="@+id/tv_paywithus"
+        android:textColor="#000000"
+        android:text="Pay with us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--Grid 8 buttons-->
+    <RelativeLayout
+        android:id="@+id/relative_8_btn"
+        android:layout_below="@id/tv_paywithus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:orientation="horizontal">-->
+
+            <!--Linear total -->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                >
+
+                <!--top 4 linear wieightsum 4-->
+                <LinearLayout
+                    android:paddingTop="10dp"
+                    android:weightSum="4"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <!--1-->
+            <LinearLayout
+                android:layout_weight="1"
+                 android:orientation="vertical"
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content">
+
+        <ImageButton
+            android:layout_gravity="center"
+            android:id="@+id/img_btn_tv"
+            android:background="@drawable/television"
+            android:layout_height="@dimen/btn8_height_large"
+            android:layout_width="@dimen/btn8_width_large"/>
+         <TextView
+             android:textAlignment="center"
+             android:textSize="@dimen/btn8_text_large"
+             android:text="Television"
+            android:layout_below="@id/img_btn_tv"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+            </LinearLayout>
+                <!--2-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+
+                android:orientation="vertical">
+
+        <ImageButton
+            android:layout_gravity="center"
+            android:id="@+id/img_btn_topup"
+            android:background="@mipmap/topup"
+            android:layout_height="@dimen/btn8_height_large"
+            android:layout_width="@dimen/btn8_width_large"/>
+
+                <TextView
+                    android:textSize="@dimen/btn8_text_large"
+                    android:textAlignment="center"
+                    android:text="Top up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+                <!--3-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+
+                android:orientation="vertical">
+
+        <ImageButton
+            android:layout_gravity="center"
+            android:id="@+id/img_btn_internet"
+            android:background="@mipmap/internet"
+            android:layout_height="@dimen/btn8_height_large"
+            android:layout_width="@dimen/btn8_width_large"/>
+
+                <TextView
+                    android:textSize="@dimen/btn8_text_large"
+                    android:textAlignment="center"
+                    android:text="Internet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+                <!--4-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+
+                android:orientation="vertical">
+
+        <ImageButton
+            android:layout_gravity="center"
+            android:id="@+id/img_btn_electricity"
+            android:background="@drawable/sendmoney"
+            android:layout_height="@dimen/btn8_height_large"
+            android:layout_width="@dimen/btn8_width_large"/>
+
+                <TextView
+                    android:textSize="@dimen/btn8_text_large"
+                    android:textAlignment="center"
+                    android:text="Electricity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:weightSum="4"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <!--5-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+
+                android:orientation="vertical">
+                <ImageButton
+                    android:layout_gravity="center"
+                    android:id="@+id/img_btn_water"
+                    android:background="@drawable/sendmoney"
+                    android:layout_height="@dimen/btn8_height_large"
+                    android:layout_width="@dimen/btn8_width_large"/>
+
+                <TextView
+                    android:textSize="@dimen/btn8_text_large"
+                    android:textAlignment="center"
+                    android:text="Water"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+                <!--6-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+
+                android:orientation="vertical">
+            <ImageButton
+                android:layout_gravity="center"
+                android:id="@+id/img_btn_rcpin"
+                android:background="@drawable/rcpin"
+                android:layout_height="@dimen/btn8_height_large"
+                android:layout_width="@dimen/btn8_width_large"/>
+
+                <TextView
+                    android:textSize="@dimen/btn8_text_large"
+                    android:textAlignment="center"
+                    android:text="RC Pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+                <!--7-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+
+                android:orientation="vertical">
+            <ImageButton
+                android:layout_gravity="center"
+                android:id="@+id/img_btn_insurance"
+                android:background="@drawable/sendmoney"
+                android:layout_height="@dimen/btn8_height_large"
+                android:layout_width="@dimen/btn8_width_large"/>
+                <TextView
+                    android:textSize="@dimen/btn8_text_large"
+                    android:textAlignment="center"
+                    android:text="Insurance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+                <!--8-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+
+                android:orientation="vertical">
+            <ImageButton
+                android:layout_gravity="center"
+                android:id="@+id/img_btn_more"
+                android:background="@drawable/sendmoney"
+                android:layout_height="@dimen/btn8_height_large"
+                android:layout_width="@dimen/btn8_width_large"/>
+                <TextView
+                    android:textSize="@dimen/btn8_text_large"
+                    android:textAlignment="center"
+                    android:text="More"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+         </LinearLayout>
+
+            </LinearLayout>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/relative_add"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/relative_8_btn"
+        >
+        <LinearLayout
+            android:background="@mipmap/ptv_add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:layout_marginLeft="25dp"
+        android:paddingTop="10dp"
+        android:layout_below="@id/relative_add"
+        android:id="@+id/tv_ticketing"
+        android:textColor="#000000"
+        android:text="Ticketing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <GridLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tv_ticketing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="10dp"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--5-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+                <ImageButton
+                    android:layout_gravity="center"
+                    android:id="@+id/img_bt2n_water"
+                    android:background="@drawable/sendmoney"
+                    android:layout_height="@dimen/btn8_height_large"
+                    android:layout_width="@dimen/btn8_width_large"/>
+
+                <TextView
+                    android:textSize="@dimen/btn8_text_large"
+                    android:textAlignment="center"
+                    android:text="Water"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <!--6-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+                <ImageButton
+                    android:layout_gravity="center"
+                    android:id="@+id/img_b2tn_rcpin"
+                    android:background="@drawable/rcpin"
+                    android:layout_height="@dimen/btn8_height_large"
+                    android:layout_width="@dimen/btn8_width_large"/>
+
+                <TextView
+                    android:textSize="@dimen/btn8_text_large"
+                    android:textAlignment="center"
+                    android:text="RC Pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <!--7-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+                <ImageButton
+                    android:layout_gravity="center"
+                    android:id="@+id/img_bt2n_insurance"
+                    android:background="@drawable/sendmoney"
+                    android:layout_height="@dimen/btn8_height_large"
+                    android:layout_width="@dimen/btn8_width_large"/>
+                <TextView
+                    android:textSize="@dimen/btn8_text_large"
+                    android:textAlignment="center"
+                    android:text="Insurance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <!--8-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+                <ImageButton
+                    android:layout_gravity="center"
+                    android:id="@+id/img_b2tn_more"
+                    android:background="@drawable/sendmoney"
+                    android:layout_height="@dimen/btn8_height_large"
+                    android:layout_width="@dimen/btn8_width_large"/>
+                <TextView
+                    android:textSize="@dimen/btn8_text_large"
+                    android:textAlignment="center"
+                    android:text="More"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </GridLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
